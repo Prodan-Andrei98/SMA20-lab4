@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">L4</string>
+    <string name="todo">TODO</string>
+    <string name="load_image_with_background_service">Poza1</string>
+    <string name="load_image_with_foreground_service">Poza2</string>
+</resources>

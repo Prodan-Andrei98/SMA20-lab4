@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <WebView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/lBottom"
+        android:id="@+id/WebView"/>
+
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/lBottom"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/bLoadBackground"
+        tools:ignore="ButtonStyle"
+        android:text="@string/load_image_with_background_service"
+        android:onClick="loadImage"
+        android:layout_weight="1"/>
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/bLoadForeground"
+        tools:ignore="ButtonStyle"
+        android:text="@string/load_image_with_foreground_service"
+        android:onClick="loadImage"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
